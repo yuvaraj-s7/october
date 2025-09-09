@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(./mainbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+  }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.8)); */
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.launch div{
+    display: inline-block;
+    margin-left: 2.3rem;
+    text-align: center;
+    /* width: 160px; */
+    height: 150px;
+    border-radius: 15px;
+}
+.newBtn{
+    width: 200px;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+.newBtn:hover{
+    border: solid 1px white;
+    color:white;
+    background-color: transparent;
+    /* border-color:white ; */
+}
+.newBtn:active{
+    background-color:#fff;
+    color: #000;
+}
+.title h3{
+    font-size: 90px;
+    font-family: 'Alex Brush', cursive;
+    color: aliceblue;
+}
+.launch p{
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+}
+.launch span{
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a{
+    width: 100px;
+    padding: 1rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+.newBtn{
+    display: none;
+}
+.title h3{
+    font-family: 'Dancing Script', cursive;
+   
+}
+
+@media (max-width:768px){
+    .title h3{
+        font-size: 70px;
+    }
+    .launch p{
+        font-size: 40px;
+    }
+    .launch span{
+        font-size: 20px;
+    }
+    .launch div{
+        width: 100px;
+        height: 100px;
+        margin-left: 0.2rem;
+    }
+    a{
+        width: 90px;
+        font-size: 16px;
+    }
+
+    @media (max-width:838px){
+        .title h3{
+            font-size: 65px;
+        }
+        .launch p{
+            font-size: 37px;
+        }
+        .launch span{
+            font-size: 20px;
+        }
+        .launch div{
+            width: 100px;
+            height: 100px;
+            margin-left: 0.2rem;
+        }
+        a{
+            width: 90px;
+            font-size: 16px;
+        }
+    
+    }
+}
+@media (max-width:568px){
+    .title h3{
+        font-size: 60px;
+    }
+    .launch p{
+        font-size: 35px;
+    }
+    .launch span{
+        font-size: 13px;
+    }
+    .launch div{
+        width: 80px;
+        height: 80px;
+        margin-left: 0.2rem;
+    }
+
+}
+@media (max-width:386px){
+    .title h3{
+        font-size: 45px;
+    }
+    .launch p{
+        font-size: 20px;
+    }
+    .launch span{
+        font-size: 12px;
+    }
+    .launch div{
+        width: 70px;
+        height: 70px;
+        margin-left: 0.2rem;
+    }
+
+}
